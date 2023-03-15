@@ -1,14 +1,18 @@
 import java.util.Scanner;
-public class Max_num {
+
+public class MaxNumbers {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.print("Input first number: ");
-        int a = in.nextInt();
+        int a = input.nextInt();
         System.out.print("Input second number: ");
-        int b = in.nextInt();
+        int b = input.nextInt();
+
         if (a > b){
             System.out.println("Max number is " + a);
-        }else{
+        } else if (a == b) {
+            System.out.println("Numbers is equals");
+        } else{
             System.out.println("Max number is " + b);
         }
     }

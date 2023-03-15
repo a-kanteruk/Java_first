@@ -1,42 +1,45 @@
 public class Variables {
 
     public static void main(String[] args) {
-        int a = Integer.MIN_VALUE;
-        int b = Integer.MAX_VALUE;
-        int c = Short.MIN_VALUE;
-        int d = Short.MAX_VALUE;
-        long e = Long.MIN_VALUE;
-        long f = Long.MAX_VALUE;
-        int g = Byte.MIN_VALUE;
-        int h = Byte.MAX_VALUE;
-        float i = Float.MIN_VALUE;
-        float j = Float.MAX_VALUE;
-        double k = Double.MIN_VALUE;
-        double l = Double.MAX_VALUE;
-        char m = Character.MIN_VALUE;
-        char n = Character.MAX_VALUE;
-        boolean o = Boolean.TRUE;
-        boolean p = Boolean.FALSE;
+        int minInteger = Integer.MIN_VALUE;
+        int maxInteger = Integer.MAX_VALUE;
+        int minShort = Short.MIN_VALUE;
+        int maxShort = Short.MAX_VALUE;
+        long minLong = Long.MIN_VALUE;
+        long maxLong = Long.MAX_VALUE;
+        int minByte = Byte.MIN_VALUE;
+        int maxByte = Byte.MAX_VALUE;
+        float minFloat = Float.MIN_VALUE;
+        float maxFloat = Float.MAX_VALUE;
+        double minDouble = Double.MIN_VALUE;
+        double maxDouble = Double.MAX_VALUE;
+        char minChar = Character.MIN_VALUE;
+        char maxChar = Character.MAX_VALUE;
+        boolean maxBoolean = Boolean.TRUE;
+        boolean minBoolean = Boolean.FALSE;
         String word = "Hello Java!";
         char[] massive = {'j','d','k'};
-        // out
-        System.out.println(a);
-        System.out.println(b);
-        System.out.println(c);
-        System.out.println(d);
-        System.out.println(e);
-        System.out.println(f);
-        System.out.println(g);
-        System.out.println(h);
-        System.out.println(i);
-        System.out.println(j);
-        System.out.println(k);
-        System.out.println(l);
-        System.out.println(m);
-        System.out.println(n);
-        System.out.println(o);
-        System.out.println(p);
+
+        System.out.println(minInteger);
+        System.out.println(maxInteger);
+        System.out.println(minShort);
+        System.out.println(maxShort);
+        System.out.println(minLong);
+        System.out.println(maxLong);
+        System.out.println(minByte);
+        System.out.println(maxByte);
+        System.out.println(minFloat);
+        System.out.println(maxFloat);
+        System.out.println(minDouble);
+        System.out.println(maxDouble);
+        System.out.println(minChar);
+        System.out.println(maxChar);
+        System.out.println(maxBoolean);
+        System.out.println(minBoolean);
         System.out.println(word);
-        System.out.println(massive);
+        for (int i = 0; i < massive.length; i++){
+            System.out.println(massive[i]);
+        }
+
     }
 }

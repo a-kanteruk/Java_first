@@ -1,12 +1,14 @@
 import java.util.Scanner;
-public class For {
+
+public class SimpleNumber {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.print("Input first number: ");
-        int a = in.nextInt();
+        int a = input.nextInt();
         System.out.print("Input second number: ");
-        int b = in.nextInt();
-        boolean flag = true;
+        int b = input.nextInt();
+
+        boolean flag;
         for (int i = a; i <= b; i++){
             flag = true;
             for(int j = 2; j < i; j++) {
@@ -18,7 +20,6 @@ public class For {
             if ((flag == true)&&(i != 1)){
                 System.out.println(i);
             }
-
             }
         }
     }
